@@ -764,7 +764,7 @@
       <amp-analytics data-credentials='include' id='analytics1' type='googleanalytics'>
         <script type='application/json'>
         {
-          &quot;vars&quot;: { &quot;account&quot;: &quot;UA-155016384-1&quot;},
+          &quot;vars&quot;: { &quot;account&quot;: &quot;UA-XXXXXXXXXX-X&quot;},
           &quot;triggers&quot;: {&quot;trackPageview&quot;: {&quot;on&quot;: &quot;visible&quot;,&quot;request&quot;: &quot;pageview&quot;}}
         }
         </script>
