@@ -1,0 +1,2 @@
+# tomo_blogger_amp_template
+Blogger用のAMP対応テンプレート
