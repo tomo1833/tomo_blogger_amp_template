@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html amp='amp' b:css='false' b:js='false' lang='ja' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta content='blogger' name='generator'/>
+    <meta content='summary' name='twitter:card'/>
+    <meta content='@Hecp6eu2SnLClL6' name='twitter:site'/>
+    <meta expr:content='data:blog.url' property='og:url'/>
+
+    <!-- title -->
+    <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+      <title><data:blog.pageName/></title>
+      <meta expr:content='data:blog.title' property='og:title'/>
+    <b:else/>
+      <title><data:blog.title/></title>
+      <meta expr:content='data:blog.title' property='og:title'/>
+    </b:if>
+
+    <!-- canonical -->
+    <link expr:href='data:blog.url' rel='canonical'/>
+
+    <!-- keywords -->
+    <b:if cond='data:blog.pageType in {&quot;index&quot;} and data:blog.homepageUrl == data:blog.url'>
+      <meta expr:content='data:blog.title' name='keywords'/>
+    </b:if>
+    <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+      <meta expr:content='data:blog.pageName' name='keywords'/>
+    </b:if>
+
+    <!-- index-->
+    <b:if cond='data:blog.pageType in {&quot;archive&quot;} or data:blog.searchLabel or data:blog.searchQuery'>
+      <meta content='noindex, nofollow' name='robots'/>
+    </b:if>
+
+    <!-- description -->
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' property='description'/>
+      <meta expr:content='data:blog.metaDescription' property='og:description'/>
+    </b:if>
+
+    <meta content='@Iw_n' name='twitter:creator'/>
+
+    <!-- blogger skin -->
+    &lt;!-- /*<b:skin><![CDATA[/**/]]></b:skin>
+
+    <!-- amp style -->
+    <style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+
+    <!-- amp-custom -->
+    <style amp-custom='amp-custom'>
+      /*<![CDATA[*/
+      /* ---------------------------------------------------------------------- */
+      /* タグ スタイル                                                          */
+      /* ---------------------------------------------------------------------- */
+      /* -----------------------------   全体  -------------------------------- */
+      body {
+        background-color: #E0F0F0;
+        overflow-wrap: break-word;
+        word-break : break-word;
+        word-wrap : break-word;
+      }
+      div.page {
+        margin-right: auto;
+        margin-left : auto;
+        width: 1280px;
+      }
+      header, nav, main, aside, footer {
+        display: block;
+      }
+      header {
+        clear: both;
+        display: block;
+        width: 100%;
+      }
+      nav {
+        clear: both;
+        display: block;
+        width: 100%;
+      }
+      main {
+        clear: both;
+        float: left;
+        width: 900px;
+      }
+      section {
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+      }
+      section > span {
+          padding: 10px;
+      }
+      aside {
+        float: right;
+        width: 380px;
+      }
+      footer {
+        clear: both;
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        text-align : center;
+        width: 100%;
+      }
+      nav ul {
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+      }
+      nav ul li {
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        list-style: none;
+      }
+      nav ul li a {
+        background-color: #ffffff;
+        color: #0a719c;
+        display: block;
+        height: 44px;
+        margin: 5px;
+        line-height: 44px;
+        overflow: hidden;
+        padding: 0 10px;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        width: 120px;
+      }
+      nav ul li a:hover {
+        filter:drop-shadow(5px 5px 5px #4e4e4e);
+      }
+      /* ----------------------------- 投稿 -------------------------------- */
+      h1 {
+        margin: 0;
+        padding: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 28px;
+      }
+      p {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 18px;
+        line-height: 2;
+      }
+      code {
+          /* white-space: pre; */
+      }
+      /* ----------------------------- 引用-------------------------------- */
+      blockquote {
+        border: solid thin #99CFE5;
+        padding: 20px;
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        position: relative;
+      }
+      blockquote:before {
+        position: absolute;
+        top: -5px;
+        content: '“';
+        font-size: 4em;
+        color: #99CFE5;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+      }
+      blockquote p {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        font-style: oblique;
+      }
+      /* ---------------------------------------------------------------------- */
+      /* クラス スタイル                                                        */
+      /* ---------------------------------------------------------------------- */
+      .breadcrumbs {
+          padding: 10px;
+      }
+      .FeaturedPost {
+        /* margin: 10px; */
+      }
+      /* ----------------------------- メイン  カード型-------------------------------- */
+      .card-main {
+        position: relative;
+        margin: 10px 10px;
+        padding: 10px;
+        background-color:#FFF;
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+      }
+      .card-main:hover {
+        filter:drop-shadow(5px 5px 5px #4e4e4e);
+      }
+      .card-content {
+        display: block;
+      }
+      .card-text {
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 18px;
+        margin: 5px;
+      }
+      .card-info {
+        margin: 10px 0px 0px 0;
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        margin: 5px 0px;
+      }
+      .card-date {
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        margin: 5px 0px;
+      }
+      .card-snippet {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        margin: 5px;
+      }
+      .published {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+      }
+      .div-section-main {
+        background-color: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        position: relative;
+      }
+      .div-section-main amp-img img {
+        width: 760px;
+        height: 428px;
+        margin: 0 auto;
+      }
+      /* ----------------------------- メイン  SNS  -------------------------------- */
+      .share-button-link-text {
+        background: #58aeed;
+        color: #ffffff;
+        text-align: center;
+        font-size: 150%;
+        width: 100%;
+        display: block;
+      }
+      .share-button-link-text i {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        background: transparent 0 0 no-repeat;
+      }
+      .share-button-link-text i span {
+        margin-left: 3px;
+        white-space: nowrap;
+      }
+      .fab {
+        font-family: 'FontAwesome';
+      }
+      /* ----------------------------- サイドバー  -------------------------------- */
+      .sidebar-wrapper {
+        padding: 0 10px;
+      }
+      .Profile, .Label, .BlogSearch, .ReportAbuse {
+        border-bottom: solid thin;
+      }
+      .Profile h3, .Label h3, .ReportAbuse h3  {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 22px;
+        margin: 5px;
+      }
+      .widget-profile {
+        padding: 10px;
+      }
+      .profile-name > p {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 18px;
+      }
+      .profile-text > p {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+      }
+      .Label ul {
+        padding: 0;
+        list-style: none;
+      }
+      .Label ul li {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 16px;
+        margin: 5px;
+      }
+      .item-content {
+        padding: 10px;
+        margin: 10px;
+        background-color:#FFF;
+      }
+      .item-snippet {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+      }
+      .post-summary {
+        padding: 10px;
+        margin: 10px;
+        background-color:#FFF;
+      }
+      .post-summary > p {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      /* ----------------------------- フッター  -------------------------------- */
+      .credit-wrapper {
+        margin:0 auto 30px;
+        list-style:none;
+      }
+      /* ----------------------------- リンク用  -------------------------------- */
+      .div-blog-link {
+        border: solid 3px #465DAA;
+        border-radius: 10px;
+      }
+      .div-blog-link > a {
+        display: flex;
+      }
+      .div-blog-link-photo {
+        padding: 10px;
+      }
+      .div-blog-link-title {
+        width: 100%;
+        position: relative;
+      }
+      .blog-link-title {
+        padding: 15px 10px 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #99CFE5;
+      }
+      /* ---------------------------------------------------------------------- */
+      /* 固有 スタイル                                                          */
+      /* ---------------------------------------------------------------------- */
+      /* ----------------------------- ヘッダー  -------------------------------- */
+      #header-inner {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+      }
+      #title-wrapper {
+        padding: 15px 0px;
+      }
+      .widget-title {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 32px;
+      }
+      #title-wrapper > h1 > a, #title-wrapper > a {
+        color: inherit;
+        font-style: normal;
+        text-decoration: none;
+      }
+      /* -----------------------------  メイン   -------------------------------- */
+      #blog-pager {
+        text-align: center;
+        margin: 10px;
+      }
+      #blog-pager-newer-link {
+        float: left;
+      }
+      #blog-pager-older-link {
+        float: right;
+      }
+      /* ----------------------------- フッター  -------------------------------- */
+      #footer-wrapper {
+        color:#a7b2c3;
+        font-size:16px;
+        margin:30px auto 0;
+        text-align:center;
+        width:100%;
+      }
+      #footer-wrapper a {
+        color:#a7b2c3;
+        list-style:none;
+      }
+      #footer-wrapper a:hover {
+        color:#4588f3;
+      }
+      /* ---------------------------------------------------------------------- */
+      /* テンプレート固有 スタイル                                              */
+      /* ---------------------------------------------------------------------- */
+      .div-section-main h1 {
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 28px;
+        margin: 8px 0px;
+        padding:8px 0px;
+      }
+      .div-section-main h2 {
+        background: linear-gradient(to top right, #CAE7F2 10%, #fff);
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 24px;
+        padding: 5px;
+      }
+      .div-section-main h3 {
+        background: linear-gradient(to top right, #EAF2F8 10%, #FFF);
+        display: block;
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 20px;
+        padding: 5px;
+      }
+      .pre-main {
+          background-color: #000;
+          color: #FFF;
+          white-space: pre-wrap;
+          padding: 5px;
+          overflow: auto;
+      }
+      .emphasis {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-weight: bold;
+      }
+      .div-frame {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        position: relative;
+        margin: 20px 5px 5px 5px;
+        padding: 5px;
+        border: solid 3px #465DAA;
+        border-radius: 10px;
+      }
+      .div-sitemap {
+        font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+        font-size: 14px;
+        position: relative;
+        margin: 20px 5px 5px 5px;
+        padding: 5px;
+        border: solid 3px #465DAA;
+        border-radius: 10px;
+      }
+      .div-sitemap > span {
+        position: absolute;
+        display: inline-block;
+        top: -10px;
+        left: 20px;
+        padding: 0 10px;
+        line-height: 1;
+        background: #fff;
+        color: #99CFE5;
+        font-weight: bold;
+      }
+      .div-sitemap > ul > li > a {
+          font-size: 14px;
+      }
+      .post-footer {
+      }
+      .cy30 {
+          background-color: #FFB;
+      }
+      .cy70 {
+          background-color: #FFF462;
+      }
+      .fcb {
+          color: #000;
+      }
+      .w20p {
+          width: 20%;
+      }
+      .w50p {
+          width: 50%;
+      }
+      .w80p {
+          width: 80%;
+      }
+      .w100p {
+          width: 100%;
+      }
+      /* ====================================================================== */
+      /* Responsive                                                             */
+      /* ====================================================================== */
+      /* --------------------          PC 1280px          --------------------- */
+      @media screen and (max-width: 1280px) {
+      }
+      /* --------------------       タブレット 860px      --------------------- */
+      @media screen and (max-width:860px) {
+        div.page {
+          width: 100%;
+        }
+        main {
+          width: 100%;
+        }
+        section {
+        }
+        aside {
+          width: 100%;
+        }
+        .main {
+          text-align: center;
+        }
+      }
+      /* --------------------      スマホ iPone 480px     --------------------- */
+      @media screen and (max-width:480px) {
+        div.page {
+          width: 100%;
+        }
+        main {
+          width: 100%;
+        }
+        section {
+          display: block;
+          margin: 5px;
+        }
+        aside {
+          width: 100%;
+        }
+        .title {
+         padding: 10px 0px;;
+        }
+        .main {
+          text-align: left;
+        }
+        .card-content amp-img {
+          max-width: 460px;
+          width: 460px;
+          height: 180px;
+          margin: 0 auto;
+        }
+        .div-section-main {
+          margin: 20px 0px;
+          padding: 20px 10px;
+          width: 460px;
+        }
+        .card-main {
+          display: block;
+          padding: 10px 0px;
+          margin: 10px 0px;
+          width: 100%;
+          height: 460px;
+        }
+        .card-text {
+          margin: 10px;
+        }
+        .card-info {
+          margin: 20px 5px 5px 10px;
+          font-size: 12px;
+        }
+        .card-date {
+          margin: 5px 5px 5px 10px;
+          font-size: 12px;
+        }
+
+      }
+      /* --------------------      スマホ      414px     --------------------- */
+      @media screen and (max-width:414px){
+        .card-content amp-img {
+          max-width: 400px;
+          width: 400x;
+          height: 180px;
+          margin: 0 auto;
+        }
+        .div-section-main {
+          margin: 20px 0px;
+          padding: 20px 10px;
+          width: 400px;
+        }
+        .card-main {
+          display: block;
+          padding: 10px 0px;
+          margin: 10px 0px;
+          width: 100%;
+          height: 320px;
+        }
+        .card-text {
+          margin: 10px;
+        }
+        .card-info {
+          margin: 20px 5px 5px 10px;
+          font-size: 12px;
+        }
+        .card-date {
+          margin: 5px 5px 5px 10px;
+          font-size: 12px;
+        }
+      }
+      /* --------------------      スマホ      380px     --------------------- */
+      @media screen and (max-width:380px){
+        .card-content amp-img {
+          max-width: 370px;
+          width: 370px;
+          height: 180px;
+          margin: 0 auto;
+        }
+        .div-section-main {
+          margin: 20px 0px;
+          padding: 20px 10px;
+          width: 370px;
+        }
+        .card-main {
+          display: block;
+          padding: 10px 0px;
+          margin: 10px 0px;
+          width: 100%;
+          height: 320px;
+        }
+        .card-text {
+          margin: 10px;
+        }
+        .card-info {
+          margin: 20px 5px 5px 10px;
+          font-size: 12px;
+        }
+        .card-date {
+          margin: 5px 5px 5px 10px;
+          font-size: 12px;
+        }
+      }
+      /* --------------------      スマホ      360px     --------------------- */
+      @media screen and (max-width:360px){
+        .card-content amp-img {
+          max-width: 320px;
+          width: 320px;
+          height: 180px;
+          margin: 0 auto;
+        }
+        .div-section-main {
+          margin: 20px 0px;
+          padding: 20px 10px;
+          width: 340px;
+        }
+        .card-main {
+          display: block;
+          padding: 10px 0px;
+          margin: 10px 0px;
+          width: 100%;
+          height: 320px;
+        }
+        .card-text {
+          margin: 10px;
+        }
+        .card-info {
+          margin: 20px 5px 5px 10px;
+          font-size: 12px;
+        }
+        .card-date {
+          margin: 5px 5px 5px 10px;
+          font-size: 12px;
+        }
+      }
+
+      /* 吹き出し本体 */
+      .navi-bubble {
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 0;
+        padding: 7px 10px;
+        min-width: 320px;
+        max-width: 100%;
+        color: #555;
+        font-size: 16px;
+        background: #e0edff;
+      }
+
+      /* beforeで三角を表現 */
+      .navi-bubble-triangle {
+        position: relative;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-style: solid;
+        border-width: 50px 50px 0 50px;
+        border-color: #e0edff transparent transparent transparent;
+      }
+
+      .point {
+        position: relative;
+        display: block;
+        width: 100%;
+        color: #555;
+        font-size: 16px;
+        background: #e0edff;
+        text-align: left;
+      }
+      .point p {
+        display: block;
+        padding: 0 10px;
+      }
+
+    #toggle-table_of_contents {
+      display: none;
+    }
+    #toggle-table_of_contents:checked ~ #toggle-table_of_contents-target {
+      display: block;
+    }
+    #toggle-procedure {
+      display: none;
+    }
+    #toggle-procedure:checked ~ #toggle-procedure-view {
+      display: block;
+    }
+    #toggle-last_time {
+      display: none;
+    }
+    #toggle-last_time ~ #toggle-last_time-target {
+      display: block;
+    }
+    #toggle-last_time:checked ~ #toggle-last_time-target {
+      display: none;
+    }
+    #toggle-001 {
+      display: none;
+    }
+    #toggle-001:checked ~ #toggle-001-view {
+      display: block;
+    }
+    #toggle-002 {
+      display: none;
+    }
+    #toggle-002:checked ~ #toggle-002-view {
+      display: block;
+    }
+    #toggle-003 {
+      display: none;
+    }
+    #toggle-003:checked ~ #toggle-003-view {
+      display: block;
+    }
+    #toggle-004 {
+      display: none;
+    }
+    #toggle-004:checked ~ #toggle-004-view {
+      display: block;
+    }
+    .toggle-outer label {
+      text-decoration: underline;
+      color: blue;
+    }
+    .toggle-inner {
+      display: none;
+    }
+
+      /*]]>*/
+    </style>
+
+    <!-- amp js -->
+    <script async='async' src='https://cdn.ampproject.org/v0.js'/>
+    <script async='async' custom-element='amp-analytics' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js'/>
+    <script async='async' custom-element='amp-form' src='https://cdn.ampproject.org/v0/amp-form-0.1.js'/>
+    <script async='async' custom-element='amp-iframe' src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'/>
+	<script async='async' custom-element='amp-youtube' src='https://cdn.ampproject.org/v0/amp-youtube-0.1.js'/>
+    <script async='async' custom-element='amp-auto-ads' src='https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js'/>
+
+  </head>
+  <body itemscope='itemscope' itemtype='http://schema.org/WebPage'>
+    <amp-auto-ads data-ad-client='ca-pub-2348922508571726' type='adsense'>
+    </amp-auto-ads>
+    <div class='page'>
+      <amp-analytics data-credentials='include' id='analytics1' type='googleanalytics'>
+        <script type='application/json'>
+        {
+          &quot;vars&quot;: { &quot;account&quot;: &quot;UA-155016384-1&quot;},
+          &quot;triggers&quot;: {&quot;trackPageview&quot;: {&quot;on&quot;: &quot;visible&quot;,&quot;request&quot;: &quot;pageview&quot;}}
+        }
+        </script>
+      </amp-analytics>
+
+      <!-- =========================================================== -->
+      <!-- HEADER                                                      -->
+      <!-- =========================================================== -->
+      <header itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
+
+        <b:section class='header' id='header' maxwidgets='2' showaddelement='yes'>
+          <b:widget id='Header1' locked='false' title='40代から始めるブログ (Header)' type='Header' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'/>
+              <b:widget-setting name='displayHeight'>0</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+              <b:widget-setting name='useImage'>false</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+              <b:widget-setting name='displayWidth'>0</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div id='header-inner'>
+                <b:include name='header-title'/>
+                <b:include name='description'/>
+              </div>
+              <div style='clear: both;'/>
+            </b:includable>
+            <b:includable id='description'>
+              <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                <div id='description-wrapper'>
+                  <p class='description' itemprop='description'><span><data:description/></span></p>
+                </div>
+              </b:if>
+            </b:includable>
+            <b:includable id='header-title'>
+              <div id='title-wrapper'>
+                <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                  <h1 class='title' itemprop='headline'>
+                    <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+                      <span class='widget-title'><data:title/></span>
+                    </a>
+                  </h1>
+                <b:else/>
+                  <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                    <h1 class='title' itemprop='headline'>
+                      <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+                        <span class='widget-title'><data:title/></span>
+                      </a>
+                    </h1>
+                  <b:else/>
+                    <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+                      <span class='widget-title'><data:title/></span>
+                    </a>
+                  </b:if>
+                </b:if>
+              </div>
+            </b:includable>
+            <b:includable id='title'>
+              <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
+                <data:title/>
+              </b:tag>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        <!-- =========================================================== -->
+        <!-- nav                                                         -->
+        <!-- =========================================================== -->
+        <nav itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
+          <ul>
+            <li>
+              <a href='https://bsf40.blogspot.com/' itemprop='url' rel='tag nofollow' title='ホーム'>
+                <span itemprop='name'>ホーム</span>
+              </a>
+            </li>
+            <li>
+              <a href='https://bsf40.blogspot.com/p/bloggeramp.html' itemprop='url' rel='tag nofollow' title='サイトマップ'>
+                <span itemprop='name'>AMP対応</span>
+              </a>
+            </li>
+            <li>
+              <a href='https://bsf40.blogspot.com/p/blog-page.html' itemprop='url' rel='tag nofollow' title='サイトマップ'>
+                <span itemprop='name'>サイトマップ</span>
+              </a>
+          </li>
+          <li>
+            <a href='https://bsf40.blogspot.com/p/blog-page_29.html' itemprop='url' rel='tag nofollow' title='サイトポリシー'>
+              <span itemprop='name'>サイトポリシー</span>
+            </a>
+            </li>
+            <li class='last'>
+              <a href='https://bsf40.blogspot.com/p/blog-page_30.html' itemprop='url' rel='tag nofollow' title='お問い合わせ'>
+                <span itemprop='name'>お問い合わせ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+      </header>
+
+      <!-- =========================================================== -->
+      <!-- main                                                        -->
+      <!-- =========================================================== -->
+      <main itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/Blog'>
+        <article itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
+          
+          <!-- ============================================================ -->
+          <!--   BLOG SECTION START                                         -->
+          <!-- ============================================================ -->
+          <b:section class='main' id='blog' showaddelement='no'>
+            <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                <b:widget-setting name='authorLabel'>投稿者:</b:widget-setting>
+                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='reactionsLabel'/>
+                <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='showLabels'>true</b:widget-setting>
+                <b:widget-setting name='showLocation'>false</b:widget-setting>
+                <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                <b:widget-setting name='showReactions'>false</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main' var='top'>
+                <!-- breadcrumb -->
+                <b:include data='posts' name='breadcrumb'/>
+                <!-- pc -->
+                <!-- message -->
+                <b:include data='top' name='status-message'/>
+                <b:loop values='data:posts' var='post'>
+                  <b:include data='post' name='post'/>
+                </b:loop>
+                <!-- navigation -->
+                <b:include name='nextprev'/>
+                <!-- feed links -->
+              </b:includable>
+              <b:includable id='backlinkDeleteIcon' var='backlink'>
+                <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
+                  <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
+                    <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+                  </a>
+                </span>
+              </b:includable>
+              <b:includable id='backlinks' var='post'>
+                <a name='links'/>
+                <h4><data:post.backlinksLabel/></h4>
+                <b:if cond='data:post.numBacklinks != 0'>
+                  <dl class='comments-block' id='comments-block'>
+                    <b:loop values='data:post.backlinks' var='backlink'>
+                      <div class='collapsed-backlink backlink-control'>
+                        <dt class='comment-title'>
+                          <span class='backlink-toggle-zippy'>&#160;</span>
+                          <a expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></a>
+                          <b:include data='backlink' name='backlinkDeleteIcon'/>
+                        </dt>
+                        <dd class='comment-body collapseable'>
+                          <data:backlink.snippet/>
+                        </dd>
+                        <dd class='comment-footer collapseable'>
+                          <span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
+                          <span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
+                        </dd>
+                      </div>
+                    </b:loop>
+                  </dl>
+                </b:if>
+                <p class='comment-footer'>
+                  <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
+                </p>
+              </b:includable>
+              <b:includable id='breadcrumb' var='posts'>
+                <b:if cond='data:blog.homepageUrl != data:blog.url'>
+                  <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                    <div class='breadcrumbs'><span class='breadhome'><a expr:href='data:blog.homepageUrl' rel='tag'>Home </a> &#8250; </span><span class='breadlabel'><data:blog.pageName/></span></div>
+                  <b:else/>
+                    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                      <!-- breadcrumb for the post page -->
+                      <b:loop values='data:posts' var='post'>
+                        <b:if cond='data:post.labels'>
+                          <div class='breadcrumbs'>
+                            <span class='breadhome'><a expr:href='data:blog.homepageUrl' property='v:title' rel='v:url'>Home</a> &#8250; </span>
+                            <b:loop values='data:post.labels' var='label'>
+                              <span class='breadlabel'><a expr:href='data:label.url + &quot;?&amp;amp;max-results=7&quot;' property='v:title' rel='v:url'><data:label.name/></a> &#8250; </span>
+                           </b:loop>
+                           <span class='breadlabel'><data:post.title/></span>
+                          </div>
+                        <b:else/>
+                          <div class='breadcrumbs'><span class='breadhome'><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a> &#8250; </span><span class='breadlabel'>Unlabelled</span> &#8250; <span class='breadlabel'><data:post.title/></span></div>
+                        </b:if>
+                      </b:loop>
+                    <b:else/>
+                      <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+                        <!-- breadcrumb for the label archive page and search pages.. -->
+                        <div class='breadcrumbs'>
+                          <span class='breadhome'><a expr:href='data:blog.homepageUrl'>Home </a> &#8250; </span><span>Archives for <data:blog.pageName/></span>
+                        </div>
+                      <b:else/>
+                        <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                          <div class='breadcrumbs'>
+                            <b:if cond='data:blog.pageName == &quot;&quot;'>
+                              <span class='breadhome'><a expr:href='data:blog.homepageUrl'>Home</a> &#8250; </span><span class='breadlabel'>All posts </span>
+                            <b:else/>
+                              <span class='breadhome'> <a expr:href='data:blog.homepageUrl'>Home</a> &#8250; </span><span class='breadlabel'>Posts filed under <data:blog.pageName/></span>
+                            </b:if>
+                          </div>
+                        </b:if>
+                      </b:if>
+                    </b:if>
+                  </b:if>
+                </b:if>
+              </b:includable>
+              <b:includable id='comment-form' var='post'/>
+              <b:includable id='commentDeleteIcon' var='comment'>
+                  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+                    <b:if cond='data:showCmtPopup'>
+                      <div class='goog-toggle-button'>
+                        <div class='goog-inline-block comment-action-icon'/>
+                      </div>
+                    <b:else/>
+                      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
+                        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+                      </a>
+                    </b:if>
+                  </span>
+              </b:includable>
+              <b:includable id='comment_count_picker' var='post'>
+                  <b:if cond='data:post.commentSource == 1'>
+                    <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-post-url='data:post.url' expr:data-url='data:post.url.canonical.http'>
+                    </span>
+                  <b:else/>
+                    <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+                      <data:post.commentLabelFull/>:
+                    </a>
+                  </b:if>
+              </b:includable>
+              <b:includable id='comment_picker' var='post'>
+                <b:if cond='data:post.commentSource == 1'>
+                  <b:include data='post' name='iframe_comments'/>
+                <b:elseif cond='data:post.showThreadedComments'/>
+                  <b:include data='post' name='threaded_comments'/>
+                <b:else/>
+                  <b:include data='post' name='comments'/>
+                </b:if>
+              </b:includable>
+              <b:includable id='comments' var='post'>
+                <div class='comments' id='comments'>
+                  <a name='comments'/>
+                    <b:if cond='data:post.allowComments'>
+                      <h4><data:post.commentLabelFull/>:</h4>
+                      <b:if cond='data:post.commentPagingRequired'>
+                        <span class='paging-control-container'>
+                          <b:if cond='data:post.hasOlderLinks'>
+                            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'><data:post.oldestLinkText/></a>
+                              &#160;
+                            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'><data:post.olderLinkText/></a>
+                              &#160;
+                          </b:if>
+                          <data:post.commentRangeText/>
+                          <b:if cond='data:post.hasNewerLinks'>
+                          &#160;
+                            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'><data:post.newerLinkText/></a>
+                            &#160;
+                            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'><data:post.newestLinkText/></a>
+                          </b:if>
+                        </span>
+                      </b:if>
+                      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+                        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
+                          <b:loop values='data:post.comments' var='comment'>
+                            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+                              <b:if cond='data:comment.favicon'>
+                                <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
+                              </b:if>
+                              <a expr:name='data:comment.anchorName'/>
+                              <b:if cond='data:blog.enabledCommentProfileImages'>
+                                <data:comment.authorAvatarImage/>
+                              </b:if>
+                              <b:if cond='data:comment.authorUrl'>
+                                <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
+                              <b:else/>
+                                <data:comment.author/>
+                              </b:if>
+                              <data:commentPostedByMsg/>
+                            </dt>
+                            <dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'>
+                              <b:if cond='data:comment.isDeleted'>
+                                <span class='deleted-comment'><data:comment.body/></span>
+                              <b:else/>
+                                <p>
+                                  <data:comment.body/>
+                                </p>
+                              </b:if>
+                            </dd>
+                            <dd class='comment-footer'>
+                              <span class='comment-timestamp'>
+                                <a expr:href='data:comment.url' title='comment permalink'>
+                                  <data:comment.timestamp/>
+                                </a>
+                                <b:include data='comment' name='commentDeleteIcon'/>
+                              </span>
+                            </dd>
+                          </b:loop>
+                        </dl>
+                      </div>
+
+                      <b:if cond='data:post.commentPagingRequired'>
+                        <span class='paging-control-container'>
+                          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+                            <data:post.oldestLinkText/>
+                          </a>
+                          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+                            <data:post.olderLinkText/>
+                          </a>
+                          &#160;
+                          <data:post.commentRangeText/>
+                          &#160;
+                          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+                            <data:post.newerLinkText/>
+                          </a>
+                          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+                            <data:post.newestLinkText/>
+                          </a>
+                        </span>
+                      </b:if>
+
+                     <p class='comment-footer'>
+                       <b:if cond='data:post.embedCommentForm'>
+                         <b:if cond='data:post.allowNewComments'>
+                           <b:include data='post' name='comment-form'/>
+                         <b:else/>
+                           <data:post.noNewCommentsText/>
+                         </b:if>
+                       <b:elseif cond='data:post.allowComments'/>
+                         <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+                       </b:if>
+                     </p>
+                   </b:if>
+                   <b:if cond='data:showCmtPopup'>
+                     <div id='comment-popup'>
+                       <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+                       </iframe>
+                     </div>
+                   </b:if>
+
+                   <div id='backlinks-container'>
+                   <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+                      <b:include cond='data:post.showBacklinks' data='post' name='backlinks'/>
+                   </div>
+                   </div>
+                 </div>
+               </b:includable>
+              <b:includable id='feedLinks'>
+
+                <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+                  <b:if cond='data:feedLinks'>
+                    <div class='blog-feeds'>
+                      <b:include data='feedLinks' name='feedLinksBody'/>
+                    </div>
+                  </b:if>
+
+                <b:else/> <!--Post feed links -->
+                  <div class='post-feeds'>
+                    <b:loop values='data:posts' var='post'>
+                      <b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
+                    </b:loop>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='feedLinksBody' var='links'>
+                <div class='feed-links'>
+                <data:feedLinksMsg/>
+                <b:loop values='data:links' var='f'>
+                   <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+                </b:loop>
+                </div>
+              </b:includable>
+              <b:includable id='iframe_comments' var='post'>
+
+                <b:if cond='data:post.allowIframeComments'>
+                  <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
+                  <div class='cmt_iframe_holder' expr:data-href='data:post.url.canonical' expr:data-viewtype='data:post.viewType'/>
+
+                  <b:if cond='data:post.embedCommentForm == &quot;false&quot;'>
+                    <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+                  </b:if>
+                </b:if>
+              </b:includable>
+              <b:includable id='mobile-index-post' var='post'>
+                <div class='mobile-date-outer date-outer'>
+                  <b:if cond='data:post.dateHeader'>
+                    <div class='date-header'>
+                      <span><data:post.dateHeader/></span>
+                    </div>
+                  </b:if>
+
+                  <div class='mobile-post-outer'>
+                    <a expr:href='data:post.url'>
+                      <h3 class='mobile-index-title entry-title' itemprop='name'>
+                        <data:post.title/>
+                      </h3>
+
+                      <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+
+                      <div class='mobile-index-contents'>
+                        <b:if cond='data:post.thumbnailUrl'>
+                          <div class='mobile-index-thumbnail'>
+                            <div class='Image'>
+                              <img expr:src='data:post.thumbnailUrl'/>
+                            </div>
+                          </div>
+                        </b:if>
+
+                        <div class='post-body'>
+                          <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+                        </div>
+                      </div>
+
+                      <div style='clear: both;'/>
+                    </a>
+
+                    <div class='mobile-index-comment'>
+                      <b:include cond='data:blog.pageType != &quot;static_page&quot; and data:post.allowComments and data:post.numComments != 0' data='post' name='comment_count_picker'/>
+                    </div>
+                  </div>
+                </div>
+              </b:includable>
+              <b:includable id='mobile-main' var='top'>
+                <!-- posts -->
+                <div class='blog-posts hfeed'>
+
+                  <b:include data='top' name='status-message'/>
+
+                  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                    <b:loop values='data:posts' var='post'>
+                      <b:include data='post' name='mobile-index-post'/>
+                    </b:loop>
+                  <b:else/>
+                    <b:loop values='data:posts' var='post'>
+                      <b:include data='post' name='mobile-post'/>
+                    </b:loop>
+                  </b:if>
+                </div>
+
+               <b:include name='mobile-nextprev'/>
+            </b:includable>
+              <b:includable id='mobile-nextprev'>
+              <div class='blog-pager' id='blog-pager'>
+                <b:if cond='data:newerPageUrl'>
+                  <div class='mobile-link-button' id='blog-pager-newer-link'>
+                    <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+                  </div>
+                </b:if>
+
+                <b:if cond='data:olderPageUrl'>
+                  <div class='mobile-link-button' id='blog-pager-older-link'>
+                  <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+                  </div>
+                </b:if>
+
+                <div class='mobile-link-button' id='blog-pager-home-link'>
+                <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+                </div>
+
+                <div class='mobile-desktop-link'>
+                  <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
+                </div>
+
+              </div>
+              <div class='clear'/>
+            </b:includable>
+              <b:includable id='mobile-post' var='post'>
+                <div class='date-outer'>
+                  <b:if cond='data:post.dateHeader'>
+                    <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+                  </b:if>
+                  <div class='date-posts'>
+                    <div class='post-outer'>
+
+                      <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+                        <b:if cond='data:post.thumbnailUrl'>
+                          <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+                        </b:if>
+                        <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+                        <meta expr:content='data:post.id' itemprop='postId'/>
+
+                        <a expr:name='data:post.id'/>
+                        <b:if cond='data:post.title'>
+                          <h3 class='post-title entry-title' itemprop='name'>
+                            <b:if cond='data:post.link'>
+                              <a expr:href='data:post.link'><data:post.title/></a>
+                            <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
+                              <a expr:href='data:post.url'><data:post.title/></a>
+                            <b:else/>
+                              <data:post.title/>
+                            </b:if>
+                          </h3>
+                        </b:if>
+
+                        <div class='post-header'>
+                          <div class='post-header-line-1'/>
+                        </div>
+
+                        <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+                          <data:post.body/>
+                          <div style='clear: both;'/> <!-- clear for photos floats -->
+                        </div>
+
+                        <div class='post-footer'>
+                          <div class='post-footer-line post-footer-line-1'>
+                            <span class='post-author vcard'>
+                              <b:if cond='data:top.showAuthor'>
+                                <b:if cond='data:post.authorProfileUrl'>
+                                  <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                                    <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                                    <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                                      <span itemprop='name'><data:post.author/></span>
+                                    </a>
+                                  </span>
+                                <b:else/>
+                                  <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                                    <span itemprop='name'><data:post.author/></span>
+                                  </span>
+                                </b:if>
+                              </b:if>
+                            </span>
+
+                            <span class='post-timestamp'>
+                              <b:if cond='data:top.showTimestamp'>
+                                <data:top.timestampLabel/>
+                                <b:if cond='data:post.url'>
+                                  <meta expr:content='data:post.url.canonical' itemprop='url'/>
+                                  <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+                                </b:if>
+                              </b:if>
+                            </span>
+
+                            <span class='post-comment-link'>
+                              <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;} and data:post.allowComments' data='post' name='comment_count_picker'/>
+                            </span>
+                          </div>
+
+                          <div class='post-footer-line post-footer-line-2'>
+                            <b:if cond='data:top.showMobileShare'>
+                              <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                                <a href='javascript:void(0);'><data:shareMsg/></a>
+                              </div>
+                            </b:if>
+                            <b:if cond='data:top.showDummy'>
+                              <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
+                            </b:if>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+                    </div>
+                  </div>
+                </div>
+              </b:includable>
+              <b:includable id='nextprev'>
+                <div class='blog-pager' id='blog-pager'>
+                  <b:if cond='data:newerPageUrl'>
+                    <span id='blog-pager-newer-link'>
+                      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+                    </span>
+                  </b:if>
+
+                  <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+
+                  <b:if cond='data:olderPageUrl'>
+                    <span id='blog-pager-older-link'>
+                      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+                    </span>
+                  </b:if>
+
+                  <b:if cond='data:mobileLinkUrl'>
+                    <div class='blog-mobile-link'>
+                      <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
+                    </div>
+                  </b:if>
+
+                </div>
+                <div class='clear'/>
+              </b:includable>
+              <b:includable id='post' var='post'>
+                <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                  <section>
+                    <span><data:post.dateHeader/></span>
+                    <div class='div-section-main'>
+                      <h1 itemprop='headline'>
+                        <data:post.title/>
+                      </h1>
+                      <data:post.body/>
+                      <div class='share-this' id='share-this'>
+                        <b:include data='post' name='share-tool'/>
+                      </div>
+                      <b:include data='post' name='shareButtons'/>
+                    </div>
+                  </section>
+                <b:elseif cond='data:blog.pageType == &quot;static_page&quot;'/>
+                  <section>
+                    <div class='div-section-main'>
+                      <span><data:post.dateHeader/></span>
+                      <h1 itemprop='headline'>
+                        <data:post.title/>
+                      </h1>
+                      <data:post.body/>
+                    </div>
+                  </section>
+                <b:else/>
+                  <section>
+                    <div class='card-main'>
+                      <div class='post hentry' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+                        <a expr:href='data:post.url'>
+                          <div class='card-content'>
+                            <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+                              <meta expr:content='data:post.firstImageUrl' property='url'/> 
+                              <meta content='320' itemprop='width'/>
+                              <meta content='180' itemprop='height'/>
+                                <amp-img alt='thumbnail' expr:src='data:post.firstImageUrl' height='180' layout='responsive' width='320'/>
+                            </div>
+                          </div>
+                          <div class='card-text'>
+                            <span itemprop='headline'><data:post.title/></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class='card-snippet'>
+                          <data:post.snippet/>
+                      </div>
+                      <div class='card-date'>
+                        <span class='published' expr:content='data:post.date.iso8601' itemprop='datePublished'><data:post.date/></span>
+                      </div>
+                    </div>
+                  </section>
+                </b:if>
+              </b:includable>
+              <b:includable id='postQuickEdit' var='post'>
+                <b:if cond='data:post.editUrl'>
+                  <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+                    <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
+                      <img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+                    </a>
+                  </span>
+                </b:if>
+              </b:includable>
+              <b:includable id='share-tool' var='post'>
+                <div>
+                  <!--
+                  <amp-social-share height='28' type='twitter' width='28'/>
+                  -->
+                </div>
+                <div class='clear'/>
+              </b:includable>
+              <b:includable id='shareButtons' var='post'>
+                <!--
+                <b:if cond='data:top.showEmailButton'>
+                  <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
+                    <span class='share-button-link-text'>
+                      <data:top.emailThisMsg/>
+                    </span>
+                  </a>
+                </b:if>
+                <b:if cond='data:top.showBlogThisButton'>
+                  <a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'>
+                    <span class='share-button-link-text'>
+                      <data:top.blogThisMsg/>
+                    </span>
+                  </a>
+                </b:if>
+                -->
+                <b:if cond='data:top.showTwitterButton'>
+                  <a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>
+                    <span class='share-button-link-text'>
+                      <i class='fab fa-twitter my-skyblue'/>
+                    </span>
+                  </a>
+                </b:if>
+                <!--
+                <b:if cond='data:top.showFacebookButton'>
+                  <a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>
+                    <span class='share-button-link-text'>
+                      <data:top.shareToFacebookMsg/>
+                    </span>
+                  </a>
+                </b:if>
+                <b:if cond='data:top.showPinterestButton'>
+                  <a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'>
+                    <span class='share-button-link-text'>
+                      <data:top.shareToPinterestMsg/>
+                    </span>
+                  </a>
+                </b:if>
+               -->
+              </b:includable>
+              <b:includable id='status-message'>
+                <b:if cond='data:navMessage'>
+                  <div class='status-msg-wrap'>
+                    <div class='status-msg-border'>
+                      <div class='status-msg-bg'>
+                        <div class='status-msg-hidden'><data:navMessage/></div>
+                      </div>
+                    </div>
+                  </div>
+                <div class='clear'/>
+                </b:if>
+              </b:includable>
+              <b:includable id='threaded-comment-form' var='post'/>
+              <b:includable id='threaded_comment_js' var='post'/>
+              <b:includable id='threaded_comments' var='post'/>
+            </b:widget>
+          </b:section>
+
+        </article>
+
+      </main>
+
+      <!-- =========================================================== -->
+      <!-- aside                                                       -->
+      <!-- =========================================================== -->
+      <aside itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
+
+        <div id='sidebar-wrapper'>
+
+          <div class='widget Profile' data-version='1' id='Profile1'>
+            <h3>自己紹介</h3>
+            <div class='widget-profile'>
+              <dl class='profile-datablock'>
+                <dt class='profile-name'>
+                  <p>とも</p>
+                </dt>
+                <dt class='profile-text'>
+                  <p>システムエンジニア歴二十数年です&#12290;都内で働いています&#12290;</p>
+                  <p>フロント系&#12289;業務系&#12289;工場系&#12289;金融系&#12289;携帯キャリア系のシステム構築や保守を行ってきました&#12290;</p>
+                  <p>現在は常駐でフロント&#12289;バックエンド両方のシステムの保守&#12289;および&#12289;改修を行っています&#12290;</p>
+                  <p>HTML&#12289;CSS&#12289;JavaScript&#12289;PHP&#12289;Java&#12289;SQL&#12289;PL/SQLなど基本的なことはできます&#12290;</p>
+                </dt>
+              </dl>
+              <a class='profile-link' href='https://www.blogger.com/profile/17254329961626716497' rel='author'>詳細プロフィールを表示</a>
+                <div class='clear'/>
+              </div>
+          </div>
+ 
+          <b:section class='sidebar1' id='sidebar1' preferred='yes'>
+            <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+              <b:widget-settings>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+            </b:widget>
+            <b:widget id='FeaturedPost1' locked='false' title='注目の投稿' type='FeaturedPost' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='showSnippet'>true</b:widget-setting>
+                <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+                <b:widget-setting name='postId'>3936318931688979606</b:widget-setting>
+                <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+                <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <!-- Only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h3 class='title'><data:title/></h3>
+                </b:if>
+                <b:include name='content'/>
+              </b:includable>
+              <b:includable id='content'>
+                <div class='post-summary'>
+                  <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
+                    <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
+                  </b:if>
+                  <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
+                    <p>
+                      <data:postSummary/>
+                    </p>
+                  </b:if>
+                  <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
+                    <amp-img alt='注目の投稿' class='image' expr:src='data:postFirstImage' height='428' layout='responsive' width='760'/>
+                  </b:if>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='PopularPosts1' locked='false' title='人気の投稿' type='PopularPosts' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+                <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                <b:widget-setting name='showSnippets'>true</b:widget-setting>
+                <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h3><data:title/></h3>
+                </b:if>
+                <div class='widget-content popular-posts'>
+                  <b:loop values='data:posts' var='post'>
+
+                   <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+                       <div class='item-thumbnail'>
+                         <a expr:href='data:post.href' target='_blank'>
+                           <amp-img alt='人気の投稿' class='image' expr:src='data:post.featuredImage' height='428' layout='responsive' width='760'/>
+                         </a>
+                       </div>
+                     <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+                     <b:if cond='data:showSnippets'>
+                       <div class='item-snippet'><data:post.snippet/></div>
+                     </b:if>
+                   </div>
+
+                   <div style='clear: both;'/>
+
+                  </b:loop>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='Label1' locked='false' title='ラベル' type='Label' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                <b:widget-setting name='display'>CLOUD</b:widget-setting>
+                <b:widget-setting name='selectedLabelsList'/>
+                <b:widget-setting name='showType'>ALL</b:widget-setting>
+                <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h3><data:title/></h3>
+                </b:if>
+
+                <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+                  <ul>
+                    <b:loop values='data:labels' var='label'>
+                      <li>
+
+                        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+                          <b:if cond='data:blog.url == data:label.url'>
+                            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+                          <b:else/>
+                            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+                          </b:if>
+                          <b:if cond='data:showFreqNumbers'>
+                            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+                          </b:if>
+                        </span>
+
+                      </li>
+                    </b:loop>
+                  </ul>
+                </div>
+
+              </b:includable>
+            </b:widget>
+            <b:widget id='BlogSearch1' locked='false' title='このブログを検索' type='BlogSearch' version='1'>
+              <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h3><data:title/></h3>
+                </b:if>
+                <div class='widget-content'>
+                  <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+                    <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+                      <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+                      <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+                        <tbody>
+                          <tr>
+                            <td class='gsc-input'>
+                              <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='35' title='search' type='text'/>
+                            </td>
+                            <td class='gsc-search-button'>
+                              <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>
+                  </div>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse' version='1'>
+              <b:includable id='main'>
+                <b:include name='reportAbuse'/>
+              </b:includable>
+            </b:widget>
+          </b:section>
+
+        </div>
+        <div style='clear: both;'/>
+      </aside>
+
+      <!-- =========================================================== -->
+      <!-- footer                                                      -->
+      <!-- =========================================================== -->
+      <footer itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPFooter'>
+        <div id='footer-wrapper'>
+          <div class='credit-wrapper'>
+            Copyright &#169;<span itemprop='copyrightYear'>2019-2021</span>  <span itemprop='copyrightHolder' itemscope='itemscope' itemtype='https://schema.org/Organization'><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'><span itemprop='name'><data:blog.title/></span></a></span> - All Right Reserved
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
